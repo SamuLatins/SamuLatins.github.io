@@ -1,0 +1,836 @@
+* {
+  padding: 0;
+  margin: 0
+}
+
+nav {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: flex;
+  padding-top: 13px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: hsla(0, 0.00%, 0.00%, 0.00);
+  opacity: 1;
+}
+
+.nav-item {
+  position: relative;
+  left: auto;
+  right: auto;
+  margin-right: 80px;
+  margin-left: 80px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  opacity: 1;
+  font-family: Helvetica;
+  color: hsla(228, 0.00%, 100.00%, 1.00);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  color: hsla(228, 8.77%, 11.18%, 1.00);
+}
+
+.intro-header {
+  position: static;
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 0px;
+  min-width: 0px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0.00%, 98.00%, 1.00);
+  background-image: url("./imgs/romaaltissimo.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  color: hsla(228, 0.00%, 100.00%, 1.00);
+  background-clip: border-box;
+}
+
+.intro-header.subpage {
+  height: 380px;
+  margin-bottom: 50px;
+}
+
+.intro-content {
+  width: 70%;
+  max-width: 1140px;
+  text-align: center;
+}
+
+
+.sfondo-nero {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-image: linear-gradient(to top, hsla(0, 0.00%, 0.00%, 0.34), hsla(0, 0.00%, 0.00%, 0.63));
+  opacity: 1;
+}
+
+.sfondo-nero.subpage.sfumato {
+  background-image: linear-gradient(to top, hsla(0, 0.00%, 0.00%, 0.34), hsla(0, 0.00%, 0.00%, 0.63));
+}
+
+.sfondo-nero.sfumato {
+  background-image: linear-gradient(to top, hsla(0, 0.00%, 0.00%, 0.40), hsla(0, 0.00%, 0.00%, 0.18));
+  opacity: 1;
+}
+
+.sfondo-nero.nero-hover {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0.00%, 0.00%, 0.00);
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  color: white;
+  mix-blend-mode: normal;
+}
+
+
+.sfondo-nero.nero-hover:hover {
+  background-color: hsla(0, 0.00%, 0.00%, 0.74);
+  opacity: 1;
+}
+
+
+button, .iframe-shadow, .box-shadow {
+  box-shadow: 3px 3px 11px -6px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 95px;
+  line-height: 95px;
+  font-weight: 700;
+
+}
+
+h1.h1-home {
+  margin-top: 50px;
+  margin-bottom: 70px
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: hsla(228, 8.77%, 11.18%, 1.00);
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: normal;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  text-align: center
+}
+
+button {
+  padding-top: 12px;
+  padding-right: 25px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  border: none;
+  background-color: #ffe5b4;
+  transition-property: background-color, opacity, color;
+  transition-duration: 400ms, 400ms, 400ms;
+  transition-timing-function: ease, ease, ease;
+  color: black;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #32343a;
+  color: white;
+}
+
+button:active {
+  background-color: #43464d;
+}
+
+button.big-button {
+  padding-top: 16px;
+  padding-right: 35px;
+  padding-bottom: 16px;
+  padding-left: 35px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+button.big-button.white-button {
+  background-color: hsla(228, 0.00%, 100.00%, 1.00);
+  color: hsla(0, 0.00%, 0.00%, 1.00);
+}
+
+button.big-button.white-button:hover {
+  background-color: hsla(228, 0.00%, 94.67%, 1.00);
+}
+
+button.big-button.white-button:active {
+  background-color: hsla(0, 0.00%, 88.24%, 1.00);
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+}
+
+.motto-wrap {
+  width: 80%;
+  margin-right: auto;
+  margin-bottom: 85px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.home-content-wrap {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+p {
+  margin-bottom: 0px;
+  opacity: 0.45;
+  font-family: "Montserrat", sand-serif;
+  line-height: 1.5em;
+  font-weight: 400;
+  text-align: left;
+  mix-blend-mode: normal;
+}
+
+ul {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-family: Montserrat;
+  line-height: 1.5em;
+  font-weight: 400;
+  text-align: left;
+  mix-blend-mode: normal;
+  margin-bottom: 40px
+}
+
+.home-grid-img1 {
+  height: 400px;
+  background-image: url("./imgs/foro.png");;
+  background-position: 50% 50%;
+  background-size: cover
+}
+
+.home-grid-img2 {
+  height: 400px;
+  background-image: url("./imgs/colosseo.png");;
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+.home-grid-1 {
+  display: grid;
+  margin-bottom: 80px;
+  align-items: center;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-areas: ". .";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+}
+
+.home-grid-2 {
+  display: grid;
+  margin-bottom: 80px;
+  align-items: center;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-areas: ". .";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+}
+
+.home-content-wrap {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+.container {
+  display: block;
+  width: auto;
+  max-width: min(1140px, 95%);
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.blog-heading {
+  max-width: 1140px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.home-grid2 {
+  display: grid;
+  height: 500px;
+  justify-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  align-content: start;
+  grid-column-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr;
+}
+
+.home-grid2-img1 {
+  background-image: url("./imgs/colosseo2.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.home-grid2-img2 {
+  background-image: url("./imgs/pantheon.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.home-grid2-img3 {
+  background-image: url("./imgs/foro2.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.home-grid2-button-container {
+  grid-column-start: span 3;
+  grid-column-end: span 3;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+  align-self: center;
+  justify-self: center;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+.footer-wrap {
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f7;
+  opacity: 0.35;
+  color: hsla(228, 0.00%, 0.00%, 1.00);
+  line-height: 1.75em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-wrap.easyrome-footer {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit
+}
+
+.home-section-wrap {
+  margin-bottom: 30px
+}
+
+.testo-in-shadow {
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.itinerari-home-grid {
+  display: grid;
+  overflow: visible;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  justify-content: stretch;
+  align-content: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  object-fit: contain;
+}
+
+.itinerari-home-grid-img1 {
+  width: 100%;
+  height: 522px;
+  min-height: 522px;
+  min-width: 522px;
+  background-image: url("./imgs/famiglia.jpg");
+  background-position: 70% 50%;
+  background-size: cover;
+}
+
+.itinerari-home-grid-img2 {
+  width: 100%;
+  height: 522px;
+  min-height: 522px;
+  min-width: 522px;
+  background-image: url("./imgs/turista.jpg");
+  background-position: 20% 100%;
+  background-size: 180%;
+  background-attachment: scroll;
+}
+
+.center-text-wrap {
+  text-align: center;
+}
+
+.section.section-itinerari {
+  padding-top: 50px
+}
+
+.divider.itinerario {
+  margin: 30px 0px
+}
+
+h2.h2-giorni {
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px
+}
+
+
+.tappe-grid {
+  display: grid;
+  width: 500px;
+  grid-column-gap: 18px;
+  grid-row-gap: 0px;
+  grid-template-areas: "." "Area";
+  grid-template-columns: 48px 1fr;
+}
+
+.tappe-grid.aday1 {
+  grid-template-rows: repeat(5, 48px);
+}
+
+.tappe-grid.aday2 {
+  grid-template-rows: repeat(15, 48px);
+}
+
+.tappe-grid.aday3 {
+  grid-template-rows: repeat(13, 48px);
+}
+
+.tappe-grid.aday4 {
+  grid-template-rows: repeat(13, 48px);
+}
+
+.tappe-grid.aday5 {
+  grid-template-rows: repeat(7, 48px);
+}
+
+.tappe-grid.fday1 {
+  grid-template-rows: repeat(5, 48px);
+}
+
+.tappe-grid.fday2 {
+  grid-template-rows: repeat(9, 48px);
+}
+
+.tappe-grid.fday3 {
+  grid-template-rows: repeat(15, 48px);
+}
+
+.tappe-grid.fday4 {
+  grid-template-rows: repeat(7, 48px);
+}
+
+.tappe-grid.fday5 {
+  grid-template-rows: repeat(7, 48px);
+}
+
+.tappe-text {
+  opacity: 0.6;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  align-self: center;
+}
+
+.tappe-train {
+  width: 100%;
+  height: 100%;
+  background-image: url("./imgs/icons/train.png");
+  background-size: cover
+}
+
+.tappe-tappa {
+  width: 100%;
+  height: 100%;
+  background-image: url("./imgs/icons/place.png");
+  background-size: cover
+}
+
+.tappe-dots {
+  width: 75%;
+  height: 75%;
+  background-image: url("./imgs/icons/dots.png");
+  background-size: cover;
+  align-self: center;
+  justify-self: center;
+}
+
+.tappe-bed {
+  width: 100%;
+  height: 100%;
+  background-image: url("./imgs/icons/bed.png");
+  background-size: cover
+}
+
+.tappe-menu {
+  width: 100%;
+  height: 100%;
+  background-image: url("./imgs/icons/restaurant.png");
+  background-size: cover
+}
+
+.container.container-tappe {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.story-wrap {
+  width: 80%;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.stai-a-sx {
+  text-align: left;
+}
+
+.chi-siamo-facce-wrap {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.guida-scheda {
+  width: 250px;
+  min-height: 370px;
+  min-width: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: hsla(0, 0.00%, 88.00%, 0.00);
+}
+
+.guida-scheda-img {
+  height: 75%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: hsla(0, 0.00%, 66.00%, 1.00);
+}
+
+.text-guida-scheda1 {
+  margin-top: 10px;
+  padding-top: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #1A1B1F;
+  opacity: 0.8;
+}
+.text-guida-scheda2 {
+  margin-top: 10px;
+  font-family: Helvetica;
+  color:#1A1B1F;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.text-guida-scheda3 {
+  opacity: 0.5;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Helvetica;
+  color: #1A1B1F;
+  font-size: 13px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}
+
+.center-children {
+  text-align: center;
+}
+
+.scheda-maxwidth {
+  max-width: 940px
+}
+
+.attrazione {
+  width: auto;
+  height: 100%
+}
+
+.attrazione-img1 {
+  background-image: url("imgs/Colosseo3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img2 {
+  background-image: url("imgs/domus-aurea2.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img3 {
+  background-image: url("imgs/pantheon2.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img4 {
+  background-image: url("imgs/Colonna-traiana.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img5 {
+  background-image: url("imgs/terme-di-traiano.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img6 {
+  background-image: url("imgs/terme-di-caracalla.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img7 {
+  background-image: url("imgs/ara-pacis.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img8 {
+  background-image: url("imgs/fori-romani.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img9 {
+  background-image: url("imgs/circo-massimo.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img10 {
+  background-image: url("imgs/mausoleo-di-augusto.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.attrazione-img11 {
+  background-image: url("imgs/teatro-di-marcello.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.container.container-attrazione {
+  display: flex;
+  flex-direction: column;
+}
+
+.attrazione-wrap {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+  grid-template-areas: "." ".";
+  grid-template-columns: 3fr 5fr;
+}
+
+.iframe-wrap {
+  position: relative
+}
+
+.iframe-hider {
+  height: 54px;
+  width: 55%;
+  position: absolute;
+  top: 0px;
+  left: 55%;
+  background-color: white;
+}
+
+.iframe-hider.f1 {
+  height: 54px;
+  width: 55%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  background-color: white;
+}
+
+.motto-wrap.attrazioni {
+  margin-bottom: 50px
+}
+
+.plus-wrap {
+  margin-top: 10px;
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+
+.plus1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imgs/icons/plus1.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 100%
+}
+
+.plus2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imgs/icons/plus2.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.plus2:hover {
+  opacity: 100%
+}
+
+.iframe-shadow {
+  position: absolute;
+  top: 54px;
+  left: 0;
+  height: 426px;
+  width: 640px;
+  pointer-events: none
+}
+
+.bulfone-img {
+  background-image: url("imgs/bulfone.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.galasso-img {
+  background-image: url("imgs/galasso1.jpg");
+  background-size: cover;
+  background-position: 0% 0%;
+}
+
+.vidoni-img {
+  background-image: url("imgs/vidoni.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.flaibani-img {
+  background-image: url("imgs/flaibani.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.diana-img {
+  background-image: url("imgs/diana.jpeg");
+  background-size: 250%;
+  background-position: 7% 30%;
+}
